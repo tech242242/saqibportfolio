@@ -1,7 +1,7 @@
 import { memo, useState } from "react";
 import { SITE, SOCIALS } from "../data/content";
 import { useMagnetic, useReveal } from "../hooks/useInteractions";
-import { MailIcon, PinIcon, SocialIcon } from "./Icons";
+import { MailIcon, PinIcon, PhoneIcon, GlobeIcon, SocialIcon } from "./Icons";
 import { BrushUnderline, HeartTiny, Oval } from "./Decorations";
 
 const SocialLink = ({ s }: { s: (typeof SOCIALS)[number] }) => {
@@ -58,7 +58,15 @@ const Contact = () => {
               {copied ? "Copied!" : "Copy"}
             </button>
           </li>
+          <li className="rv rv-up" style={{ ["--d" as string]: "0.35s" }}>
+            <PhoneIcon />
+            <a href={`tel:${SITE.phone.replace(/\s+/g, "")}`}>{SITE.phone}</a>
+          </li>
           <li className="rv rv-up" style={{ ["--d" as string]: "0.4s" }}>
+            <GlobeIcon />
+            <a href={SITE.website} target="_blank" rel="noreferrer">mrsaqib242.vercel.app</a>
+          </li>
+          <li className="rv rv-up" style={{ ["--d" as string]: "0.45s" }}>
             <PinIcon />
             <span>{SITE.location}</span>
           </li>

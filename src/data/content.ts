@@ -1,11 +1,16 @@
 const img = (name: string) => `${import.meta.env.BASE_URL}images/${name}`;
 
 export const SITE = {
-  name: "KASHIF",
-  logo: "KASHIF",
-  roles: ["2D Animator", "Motion Designer", "Video Editor"],
-  email: "hello@kashif.com",
-  location: "India",
+  name: "SAQIB",
+  fullName: "Muhammad Saqib",
+  brand: "Saqib Visuals",
+  logo: "SAQIB",
+  roles: ["Full-Stack Developer", "AI Enthusiast", "Creative Visual Artist"],
+  email: "mrsaqib242242@gmail.com",
+  phone: "+92 347 8936242",
+  location: "Faisalabad, Pakistan",
+  website: "https://mrsaqib242.vercel.app",
+  tagline: "Building Modern Digital Experiences with Innovation, Creativity & Technology.",
   heroImage: img("hero-character.png"),
   showreelImage: img("showreel.jpg"),
   showreelVideo: "https://videos.pexels.com/video-files/36325459/15405321_1920_1080_30fps.mp4",
@@ -33,73 +38,74 @@ export type Project = {
 };
 
 export const PROJECTS: Project[] = [
-  { title: "R RUN!", category: "2D Animation", image: img("project-run.jpg"), accent: "#f5d90a" },
-  { title: "DAYDREAMS", category: "Motion Graphics", image: img("project-daydreams.jpg"), accent: "#ff7a2f" },
-  { title: "LOST SIGNAL", category: "Animated Short", image: img("project-lost-signal.jpg"), accent: "#7b3cff" },
-  { title: "GROOVY TUNES", category: "Music Video", image: img("project-groovy.jpg"), accent: "#2fd3a0" },
+  { title: "R RUN!", category: "Web App & 2D Animation", image: img("project-run.jpg"), accent: "#f5d90a" },
+  { title: "DAYDREAMS", category: "Interactive Platform", image: img("project-daydreams.jpg"), accent: "#ff7a2f" },
+  { title: "LOST SIGNAL", category: "AI & Motion Experience", image: img("project-lost-signal.jpg"), accent: "#7b3cff" },
+  { title: "GROOVY TUNES", category: "Creative Visual Production", image: img("project-groovy.jpg"), accent: "#2fd3a0" },
 ];
 
-export type SkillKey = "toonboom" | "ae" | "an" | "ps" | "blender" | "pr";
+export type SkillKey = "react" | "tailwind" | "ai" | "api" | "pr" | "ae";
 
 export const SKILLS: { key: SkillKey; label: string[] }[] = [
-  { key: "toonboom", label: ["Toon Boom", "Harmony"] },
-  { key: "ae", label: ["Adobe After", "Effects"] },
-  { key: "an", label: ["Adobe", "Animate"] },
-  { key: "ps", label: ["Adobe", "Photoshop"] },
-  { key: "blender", label: ["Blender"] },
+  { key: "react", label: ["React.js &", "Modern JS"] },
+  { key: "tailwind", label: ["Tailwind CSS", "& UI/UX"] },
+  { key: "ai", label: ["AI Integration", "& Automation"] },
+  { key: "api", label: ["Databases &", "REST APIs"] },
   { key: "pr", label: ["Premiere", "Pro"] },
+  { key: "ae", label: ["After", "Effects"] },
 ];
 
-export type SocialKey = "instagram" | "dribbble" | "youtube" | "linkedin";
+export type SocialKey = "whatsapp" | "instagram" | "tiktok" | "facebook" | "snapchat";
 
 export const SOCIALS: { key: SocialKey; label: string; href: string }[] = [
-  { key: "instagram", label: "Instagram", href: "https://instagram.com" },
-  { key: "dribbble", label: "Dribbble", href: "https://dribbble.com" },
-  { key: "youtube", label: "YouTube", href: "https://youtube.com" },
-  { key: "linkedin", label: "LinkedIn", href: "https://linkedin.com" },
+  { key: "whatsapp", label: "WhatsApp", href: "https://wa.me/923478936242" },
+  { key: "instagram", label: "Instagram", href: "https://www.instagram.com/mr_saqib242" },
+  { key: "tiktok", label: "TikTok", href: "https://www.tiktok.com/@mr_saqib_242" },
+  { key: "facebook", label: "Facebook", href: "https://web.facebook.com/muhammad.saqib.718278" },
+  { key: "snapchat", label: "Snapchat", href: "https://www.snapchat.com/add/mrsaqib242" },
 ];
 
-/* ---------- NEW SECTIONS ---------- */
+/* ---------- SECTIONS CONTENT ---------- */
 
-export const MARQUEE_A = ["2D Animation", "Motion Design", "Video Editing", "Character Design", "Storyboards"];
-export const MARQUEE_B = ["Frame by Frame", "Squash & Stretch", "Bold Colors", "Big Ideas", "Make it Dope"];
+export const MARQUEE_A = ["Full-Stack Web Dev", "AI Solutions", "UI/UX Design", "Saqib Visuals", "React & Modern JS", "Creative Visuals"];
+export const MARQUEE_B = ["Fast Performance", "Clean Code", "Creative Visuals", "Built For The Future", "Turn Ideas Into Reality"];
 
 export const STATS = [
-  { value: 6, suffix: "+", label: "Years of drawing frames", color: "var(--lime)" },
-  { value: 120, suffix: "+", label: "Projects delivered", color: "var(--purple-2)" },
-  { value: 45, suffix: "+", label: "Happy clients worldwide", color: "var(--blue)" },
-  { value: 2, suffix: "M+", label: "Views on animated work", color: "var(--orange)" },
+  { value: 5, suffix: "+", label: "Years building digital experiences", color: "var(--lime)" },
+  { value: 80, suffix: "+", label: "Projects & web apps delivered", color: "var(--purple-2)" },
+  { value: 40, suffix: "+", label: "Happy clients worldwide", color: "var(--blue)" },
+  { value: 99, suffix: "%", label: "Client satisfaction & fast delivery", color: "var(--orange)" },
 ];
 
 export type ServiceIcon = "character" | "motion" | "edit" | "story";
 
 export const SERVICES: { icon: ServiceIcon; title: string; text: string; tags: string[]; accent: string }[] = [
   {
-    icon: "character",
-    title: "2D Character Animation",
-    text: "Expressive frame-by-frame and rigged characters with snappy timing, weight and personality.",
-    tags: ["Frame by frame", "Rigging", "Lip-sync"],
+    icon: "motion",
+    title: "Premium Website Development",
+    text: "High-speed, modern, SEO-ready and responsive web applications built with cutting-edge technologies.",
+    tags: ["React.js", "Tailwind CSS", "High Speed"],
     accent: "var(--lime)",
   },
   {
-    icon: "motion",
-    title: "Motion Graphics",
-    text: "Bold, bouncy explainers, logo stings and social loops that stop the scroll.",
-    tags: ["Explainers", "Logo stings", "Social loops"],
+    icon: "character",
+    title: "Responsive Web Applications",
+    text: "Interactive, scalable, and dynamic web apps engineered for a seamless user experience across all devices.",
+    tags: ["Full-Stack", "Modern JS", "Dynamic UX"],
     accent: "var(--purple-2)",
   },
   {
-    icon: "edit",
-    title: "Video Editing",
-    text: "Story-first edits, punchy pacing, sound design and colour for YouTube, brands and music.",
-    tags: ["YouTube", "Music videos", "Colour"],
+    icon: "story",
+    title: "AI Integration & Automation",
+    text: "Smart AI integrations, LLMs, intelligent automations, and bots to supercharge workflows and products.",
+    tags: ["Gemini / AI", "Automation", "REST APIs"],
     accent: "var(--blue)",
   },
   {
-    icon: "story",
-    title: "Storyboards & Animatics",
-    text: "From a napkin idea to a timed animatic, so everyone sees the film before a frame is final.",
-    tags: ["Scripts", "Boards", "Animatics"],
+    icon: "edit",
+    title: "Creative Visuals & Video Editing",
+    text: "Punchy video editing, motion graphics, and graphic design that grab attention and tell compelling stories.",
+    tags: ["Premiere Pro", "After Effects", "Branding"],
     accent: "var(--orange)",
   },
 ];
@@ -108,100 +114,100 @@ export type JourneyIcon = "pencil" | "brush" | "film" | "rocket" | "studio" | "s
 
 export const JOURNEY: { year: string; title: string; text: string; icon: JourneyIcon; color: string }[] = [
   {
-    year: "2016",
-    title: "The First Flipbook",
-    text: "Bouncing balls in the corners of school notebooks. Flipping pages became my favourite thing.",
+    year: "2020",
+    title: "The First Line of Code",
+    text: "Wrote my very first lines of HTML and CSS, discovering the thrill of building things for the digital screen.",
     icon: "pencil",
     color: "var(--lime)",
   },
   {
-    year: "2018",
-    title: "Hello, Photoshop",
-    text: "Moved from paper to pixels. Fan art, character sketches and a lot of late-night tutorials.",
+    year: "2021",
+    title: "Modern JavaScript & React",
+    text: "Mastered React.js, modern ES6+, and responsive UI workflows with Tailwind CSS and interactive components.",
     icon: "brush",
     color: "var(--blue)",
   },
   {
-    year: "2019",
-    title: "Frame by Frame",
-    text: "Learnt Adobe Animate and made my first 12fps walk cycle. It wobbled, and I loved it.",
+    year: "2022",
+    title: "Full-Stack & APIs",
+    text: "Engineered scalable REST APIs, relational databases, and full-stack web applications with snappy performance.",
     icon: "film",
     color: "var(--purple-2)",
   },
   {
-    year: "2021",
-    title: "Going Freelance",
-    text: "First paid music video. Then YouTubers, indie brands and creators from around the world.",
+    year: "2023",
+    title: "Creative Visuals & Video",
+    text: "Expanded into high-impact video editing and creative visual design, bridging engineering with aesthetics.",
     icon: "rocket",
     color: "var(--orange)",
   },
   {
-    year: "2023",
-    title: "Studio Life",
-    text: "Worked with an animation team on series episodes, learning pipelines, Toon Boom and teamwork.",
+    year: "2024",
+    title: "AI Integration & Automation",
+    text: "Embedded generative AI solutions, smart automations, and intelligent workflows into production applications.",
     icon: "studio",
     color: "var(--lime)",
   },
   {
     year: "2025",
-    title: "Creating Awesome",
-    text: "Independent 2D animator and motion designer with 120+ projects. The next chapter could be yours.",
+    title: "Saqib Visuals",
+    text: "Running Saqib Visuals — delivering premium web apps, AI tools, and creative content for clients globally.",
     icon: "star",
     color: "var(--blue)",
   },
 ];
 
 export const PROCESS = [
-  { step: "01", title: "Idea & Script", text: "We talk, I listen, and we lock the story and vibe." },
-  { step: "02", title: "Storyboard", text: "Rough boards and an animatic to nail timing early." },
-  { step: "03", title: "Animate", text: "Keys, in-betweens, colour. This is where it comes alive." },
-  { step: "04", title: "Polish & Deliver", text: "Sound, effects and final exports for every platform." },
+  { step: "01", title: "Idea & Discovery", text: "We discuss your vision, goals, and aesthetic to craft a crystal-clear project roadmap." },
+  { step: "02", title: "UI/UX & Architecture", text: "Clean wireframes, intuitive layouts, and scalable architecture designed for high conversion." },
+  { step: "03", title: "Code & AI Integration", text: "Writing performant code, connecting robust APIs, and integrating AI automations." },
+  { step: "04", title: "Polish & Launch", text: "Cross-device testing, speed optimization, seamless deployment, and reliable support." },
 ];
 
 export const TESTIMONIALS = [
-  { name: "Aarav Mehta", role: "YouTuber, 800K subs", quote: "Kashif turned my boring intro into something my audience actually waits for. Pure magic.", color: "var(--lime)" },
-  { name: "Sara Khan", role: "Founder, Doodle Co.", quote: "Fast, super creative and fun to work with. The explainer doubled our sign-ups.", color: "var(--purple-2)" },
-  { name: "Leo Martins", role: "Indie Musician", quote: "The music video felt like my song came to life. Every beat hit perfectly.", color: "var(--blue)" },
-  { name: "Priya Nair", role: "Creative Lead, Pixel Pop", quote: "His timing and character acting are top-tier. He's now our go-to animator.", color: "var(--orange)" },
-  { name: "Daniel Cho", role: "Producer", quote: "Delivered ahead of schedule, with extra touches we never asked for. Love it.", color: "var(--lime)" },
-  { name: "Zoya Ali", role: "Brand Manager", quote: "Our social loops went viral twice in one month. Kashif gets internet culture.", color: "var(--purple-2)" },
+  { name: "Hamza Sheikh", role: "E-Commerce Founder", quote: "Saqib built our storefront with blazing fast speed and killer aesthetics. Our conversions shot up within two weeks!", color: "var(--lime)" },
+  { name: "Zainab Malik", role: "Agency Director", quote: "Muhammad Saqib's attention to detail in React and UI/UX design is world-class. Fast delivery and spotless communication.", color: "var(--purple-2)" },
+  { name: "David Miller", role: "Tech Lead", quote: "Integrated an AI workflow into our web platform seamlessly. Saqib delivers clean, maintainable code every time.", color: "var(--blue)" },
+  { name: "Ayesha Noor", role: "Content Creator", quote: "From our web app to high-energy video edits, Saqib Visuals elevated my whole digital brand. Highly recommended!", color: "var(--orange)" },
+  { name: "Bilal Farooq", role: "Startup Founder", quote: "Delivered our MVP ahead of schedule with responsive layouts and smooth animations that our users adore.", color: "var(--lime)" },
+  { name: "Sarah Jenkins", role: "Product Manager", quote: "Exceptional work ethic. Whether it's complex APIs, sleek UI, or video edits, he brings immense value.", color: "var(--purple-2)" },
 ];
 
 export type BlogPost = { title: string; excerpt: string; tag: string; date: string; read: string; image: string };
 
 export const BLOG: BlogPost[] = [
   {
-    title: "12 Tiny Tricks for Juicier Walk Cycles",
-    excerpt: "Overlap, drag and a sneaky head bob: small changes that make a walk feel alive instead of robotic.",
-    tag: "Animation",
+    title: "Building Blazing-Fast Web Apps with React & Tailwind",
+    excerpt: "How modern component patterns, minimal dependencies, and clean CSS deliver lightning-fast page loads.",
+    tag: "Web Dev",
     date: "Mar 12, 2025",
-    read: "6 min",
+    read: "5 min",
     image: img("blog-walkcycle.jpg"),
   },
   {
-    title: "Easing Is Everything in Motion Design",
-    excerpt: "Why linear keyframes feel dead, and how I build curves in After Effects that bounce with attitude.",
-    tag: "Motion",
+    title: "Integrating AI & LLMs into Production Applications",
+    excerpt: "Practical guide to adding intelligent automation, chatbots, and generative features to user-facing apps.",
+    tag: "AI & Tech",
     date: "Feb 02, 2025",
-    read: "5 min",
+    read: "6 min",
     image: img("blog-motion.jpg"),
   },
   {
-    title: "Painting a Neon City in 3 Layers",
-    excerpt: "Behind the scenes of the Lost Signal backgrounds: colour scripts, glow passes and cheap parallax.",
-    tag: "Behind the Scenes",
+    title: "Design Principles that Drive Digital Conversions",
+    excerpt: "Why clean UI/UX hierarchy, typography, and micro-interactions turn regular visitors into loyal clients.",
+    tag: "UI/UX Design",
     date: "Jan 18, 2025",
-    read: "8 min",
+    read: "7 min",
     image: img("showreel.jpg"),
   },
 ];
 
 export const FAQ = [
-  { q: "What kind of projects do you take on?", a: "Character animation, explainers, music videos, YouTube intros and edits, social loops and animated shorts. If it moves, let's talk." },
-  { q: "How long does a typical animation take?", a: "A 30–60 second motion graphics piece usually takes 1–3 weeks. Frame-by-frame character work takes longer. You'll get a clear timeline up front." },
-  { q: "What do you need from me to start?", a: "A short brief: your goal, audience, rough length, references you love and your deadline. Don't worry if it's messy, we'll shape it together." },
-  { q: "Do you work with international clients?", a: "Yes! I work remotely with creators and brands worldwide, with async updates and review links at every stage." },
-  { q: "How many revisions are included?", a: "Two rounds at the storyboard stage and two rounds on the final animation are included, so we're aligned long before the final render." },
+  { q: "What kind of projects and services do you offer?", a: "I specialize in premium website development, responsive React web apps, AI integrations & automations, UI/UX design, database & REST APIs, and creative video editing." },
+  { q: "How long does a typical project take?", a: "A modern website or landing page typically takes 3–5 days. Complex full-stack applications or custom AI integrations take 1–3 weeks with transparent milestones." },
+  { q: "What do you need from me to get started?", a: "A quick brief: your goals, reference sites or features you love, and your target timeline. We will collaborate closely to shape the exact specifications." },
+  { q: "Do you work with international clients?", a: "Yes! Based in Faisalabad, Pakistan, I work with clients, startups, and creators globally via WhatsApp, Google Meet, and async updates." },
+  { q: "Do you provide revisions and post-launch support?", a: "Yes, revisions are included during both the design and development phases, along with post-launch support to guarantee everything runs smoothly." },
 ];
 
 /** All images, used by the loader to preload everything for instant display. */

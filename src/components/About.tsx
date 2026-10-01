@@ -32,8 +32,8 @@ const About = ({ onMore }: Props) => {
             About Me
           </h2>
           <p className="rv rv-up" style={{ ["--d" as string]: "0.3s" }}>
-            I'm Kashif, a 2D Animator and Motion Designer who loves turning ideas into playful, impactful visuals.
-            I enjoy telling stories that entertain, connect and leave a lasting impression.
+            Hi! I'm Muhammad Saqib, a passionate developer and creative professional behind Saqib Visuals.
+            I specialize in building fast, modern, and user-friendly websites, AI-powered solutions, and creative visual content that turns ideas into impactful digital products.
           </p>
           <button type="button" className="text-link rv rv-up" style={{ ["--d" as string]: "0.4s" }} onClick={onMore}>
             Know More About Me <CircleArrow />
